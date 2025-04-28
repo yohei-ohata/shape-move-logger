@@ -2,6 +2,8 @@
 
 This project is an interactive web application that allows users to move shapes. Users can navigate from the start page to practice or test pages, where they can perform drag-and-drop actions, random placement, and data recording.
 
+![Example Image](./fig.jpg)
+
 ## Page Structure
 
 ### Start Page
