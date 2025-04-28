@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>図形移動作業</title>
+    <link rel="stylesheet" href="thinking_test.css">
+</head>
+<body>
+    <div class="area"></div>
+    <div class="gr"></div>
+    <div class="palet"></div>
+    <div class="gr1">
+        <div class="text-container">
+            1つ目のグループ
+        </div>
+    </div>
+    <div class="gr2">
+        <div class="text-container">
+            2つ目のグループ
+        </div>
+    </div>
+    <div class="shape drag-and-drop" id="box1"></div>
+    <div class="shape drag-and-drop" id="circle1"></div>
+    <div class="shape drag-and-drop" id="triangle1"></div> 
+    <div class="shape drag-and-drop" id="box2"></div>
+    <div class="shape drag-and-drop" id="circle2"></div>
+    <div class="shape drag-and-drop" id="triangle2"></div>
+    <!-- index box1=shape1 circle1=shape2 triangle1=shape3 box2=shape4 circle2=shape5 triangle2=shape6 -->
+    <div id="touchDisplay"></div>
+    <div id="mouseDisplay"></div>
+    
+    <div class="coordinates"></div>
+    <!-- <button class="btn btn--orange btn--cubic btn--shadow" id="endButton" style="position: fixed; bottom: 2%;left: 40%;">おわる</button> -->
+    <button class="button" id="endButton"></button>
+
+    <script src="drag_and_drop.js"></script>
+    <script src="move_front.js"></script>
+    <script src="random_place.js"></script>
+    <script src="thinking_test_touch_test.js"></script>
+</body>
+</html>

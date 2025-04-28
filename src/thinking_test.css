@@ -1,0 +1,234 @@
+/* style.css */
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box1 {
+    top: 165px;
+    left: 330px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #404040;
+    background-color:red
+}
+
+#box2 {
+    top: 530px;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #404040;
+    background-color:blue
+}
+
+#triangle1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 187px;
+    left: 78px;
+    background: #404040;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#triangle1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: 0.1px;
+    display: block;
+    position: absolute;
+    transform:scale(0.983777778);
+    bottom: -1.1033333333px;
+    background: repeating-linear-gradient(-90deg, white, white 8px, blue 8px, blue 16px);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    border: 1px solid #404040;
+}
+
+#triangle2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 250px;
+    background: #404040;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#triangle2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -0.03px;
+    display: block;
+    position: absolute;
+    transform:scale(0.967777778);
+    bottom: -1.433333332px;
+    background: repeating-linear-gradient(-90deg, white, white 8px, red 8px, red 16px);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#circle1 {
+    top: 440px;
+    left: 220px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #404040;
+    background-color:red
+}
+
+#circle2 {
+    width: 40px;
+    height: 40px;
+    top: 487px;
+    left: 480px;
+    border-radius: 50%;
+    border: 1px solid #404040;
+    background: repeating-linear-gradient(-90deg, white, white 8px, blue 8px, blue 16px);
+}
+
+.drag-and-drop {
+    cursor: move;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 20px;
+    line-height: 70px;
+    text-align:center
+}
+
+.drag {
+    z-index:1001
+}
+
+.controller {
+    position: fixed;
+    right: 0;
+}
+
+.area {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: -20px;
+    left: 0px;
+    width: 1335px;
+    height: 922px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.gr {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    width: 610px;
+    height: 780px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.palet {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 15px;
+    left: 35px;
+    width: 600px;
+    height: 770px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.gr1 {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 10px;
+    left: 700px;
+    width: 600px;
+    height: 360px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.gr2 {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 430px;
+    left: 700px;
+    width: 600px;
+    height: 360px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.text-container {
+    /* テキストコンテナのスタイルを追加 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px; /* 任意のパディングを追加できます */
+    font-size: 20px; /* 任意のフォントサイズを設定できます */
+    font-family: "HiraKakuProN-W6";
+    color: #333; /* 任意のテキスト色を設定できます */
+}
+
+.button {
+    position: fixed; 
+    bottom: -0.1%;
+    left: -0.2%;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff; 
+    /*任意の背景色を指定します */
+}
+
+.btn {
+    position: fixed;
+    bottom: 17px;
+    left: 47.5%;
+    padding: 14px 28px;
+    font-size: 22px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+    border-bottom: 7px solid #b84c00;
+}
+
+.btn--orange:hover {
+    margin-top: 5px;
+    color: #fff;
+    background: #f56500;
+    border-bottom: 3px solid #b84c00;
+}
+
+.btn--shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+

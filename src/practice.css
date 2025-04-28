@@ -1,0 +1,183 @@
+/* style.css */
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/**/
+#dog1 {
+    width: 10.2%;
+    height: 18%;
+    position: fixed;
+    background-image: url(dog1.png);
+    background-repeat: no-repeat;
+    
+}
+
+#dog2 {
+    width: 11%;
+    height: 19.5%;
+    position: fixed;
+    background-image: url(dog2.png);
+    background-repeat: no-repeat;
+}
+
+#dog3 {
+    width: 11%;
+    height: 17.5%;
+    position: fixed;
+    background-image: url(dog3.png);
+    background-repeat: no-repeat;
+}
+
+#cat1 {
+    width: 12.5%;
+    height: 17.5%;
+    position: fixed;
+    background-image: url(cat1.png);
+    background-repeat: no-repeat;
+}
+
+#cat2 {
+    width: 9.7%;
+    height: 18.5%;
+    position: absolute;
+    background-image: url(cat2.png);
+    background-repeat: no-repeat;
+}
+
+#cat3 {
+    width: 12.5%;
+    height: 20.3%;
+    position: fixed;
+    background-image: url(cat3.png);
+    background-repeat: no-repeat;
+}
+
+.drag-and-drop {
+    cursor: move;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    font-size: 20px;
+    line-height: 70px;
+    text-align:center
+}
+
+.drag {
+    z-index:1001
+}
+
+.controller {
+    position: fixed;
+    right: 0;
+}
+
+.area {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: -20px;
+    left: 0px;
+    width: 1335px;
+    height: 922px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.gr {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    width: 590px;
+    height: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.palet {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 15px;
+    left: 35px;
+    width: 580px;
+    height: 790px;
+    background-color: #ffffff;
+}
+
+.gr1 {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 10px;
+    left: 680px;
+    width: 620px;
+    height: 370px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.gr2 {
+    margin: 1em 0;
+    padding: 1em;
+    position: fixed;
+    top: 430px;
+    left: 680px;
+    width: 620px;
+    height: 380px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.1px solid #404040;
+}
+
+.text-container {
+    /* テキストコンテナのスタイルを追加 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px; /* 任意のパディングを追加できます */
+    font-size: 20px; /* 任意のフォントサイズを設定できます */
+    font-family: "HiraKakuProN-W6";
+    color: #333; /* 任意のテキスト色を設定できます */
+}
+
+.btn {
+    position: fixed;
+    bottom: 18px;
+    left: 570px;
+	padding: 14px 28px;
+	font-size: 22px;
+	border: none;
+	border-radius: 28px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn--orange {
+	color: #fff;
+	background-color: #eb6100;
+	border-bottom: 7px solid #b84c00;
+}
+
+.btn--orange:hover {
+	margin-top: 5px;
+	color: #fff;
+	background: #f56500;
+	border-bottom: 3px solid #b84c00;
+}
+
+.btn--shadow {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+

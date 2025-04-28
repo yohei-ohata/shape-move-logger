@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>図形移動作業</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div class="area"></div>
+    <div class="gr"></div>
+    <div class="palet"></div>
+    <div class="gr1">
+        <div class="text-container">
+            1つ目のグループ
+        </div>
+    </div>
+    <div class="gr2">
+        <div class="text-container">
+            2つ目のグループ
+        </div>
+    </div>
+    <div class="shape drag-and-drop" id="dog1"></div>
+    <div class="shape drag-and-drop" id="dog2"></div>
+    <div class="shape drag-and-drop" id="dog3"></div> 
+    <div class="shape drag-and-drop" id="cat1"></div>
+    <div class="shape drag-and-drop" id="cat2"></div>
+    <div class="shape drag-and-drop" id="cat3"></div>
+    <!-- index box1=shape1 circle1=shape2 triangle1=shape3 box2=shape4 circle2=shape5 triangle2=shape6 -->
+    <div class="coordinates"></div>
+    <button class="btn btn--orange btn--cubic btn--shadow" id="endButton">トップページに戻る</button>
+    <script>
+    document.getElementById("endButton").addEventListener("click", function () {
+        window.location.href = "index.html"; // 遷移先のURLを設定
+    });
+    </script>
+    
+    <script src="practice.js"></script>
+    <script src="move_front.js"></script>
+    <script src="random_place.js"></script>
+</body>
+</html>
